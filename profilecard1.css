@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 35px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profile-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35%;
+    width: 100%;
+    border-radius: 24px 24px 0 0 ;
+    background-color: #7435eb;
+}
+
+.image{
+    position: relative;
+    margin-bottom: 7px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #910606;
+    padding: 3px;
+}
+
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.text-data .myname{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text-data .myjob{
+    font-size: 16px;
+    font-weight: 350;
+}
+
+.text-data .myhobby{
+    font-size: 16px;
+    font-weight: 350;
+    margin-bottom: 10px;
+}
+
+.profile-card .sm-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.sm-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 0 8px;
+    text-decoration: none;
+    background-color: darkred ;
+}
+
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.buttons .button{
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 8px;
+    padding: 7px 12px;
+    background-color: #7435eb;
+    cursor: pointer;
+}
+
+.buttons .button:hover{
+    background-color: #381677;
+}
+
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 18px;
+    padding: 0 30px;
+    border-right: 2px solid #acacac;
+}
+
+.data:last-child{
+    border-right: none;
+}
+
+.data i{
+margin-right: 5px;
+}
